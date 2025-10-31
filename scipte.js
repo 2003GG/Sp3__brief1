@@ -36,77 +36,88 @@ const obj = [
 
     my_button.addEventListener("click",changeqe)
     function changeqe(){
-
-  for (let i=0; i <obj.length; i++){
-     qes.innerText = obj[i].Qestion
-     
-    answer1.textContent = obj[i].answer
-    answer2.textContent = obj[i].answer
-    answer3.textContent = obj[i].answer
-    answer4.textContent = obj[i].answer
-
-    console.log(obj[i])
-  }
-}
-
-
-// console.log(answer1);
-
-// resersh for the correct answer
-
-
-for (let i = 0; i < obj.length; i++){
-  if (answer1 === obj[i].Tr){
-    answer1.addEventListener("click", event => {
+        
+          for (let i=0; i <obj.length; i++){
+                 qes.textContent = obj[0].Qestion
+            
+                answer1.textContent = obj[0].answer[0]
+                answer2.textContent = obj[0].answer[1]
+                answer3.textContent = obj[0].answer[2]
+                answer4.textContent = obj[0].answer[3]
+            
+               
+              }
+            }
+            
+            
+            
+            
+            // resersh for the correct answer
+            
+            //   for (let i=0; i <obj.length; i++){
+            //      qes.innerText = obj[0].Qestion
+            //      for(let j=0;j<obj.length;j++){
+            //     answer1.textContent = obj[i].answer[j]
+            //     answer2.textContent = obj[i].answer[j]
+            //     answer3.textContent = obj[i].answer[j]
+            //     answer4.textContent = obj[i].answer[j]
+            // }
+            //     console.log(obj[i])
+            //   }
+            // }
+            
+            for (let i = 0; i < obj.length; i++){
+                if (answer1 === obj[i].Tr){
+    answer1.addEventListener('click', event => {
       answer1.style.backgroundColor = " rgb(75, 255, 96)";
       changeqe();
     });
   }
 
   if (answer1 !== obj[i].Tr) {
-    answer1.addEventListener("click", event => {
+    answer1.addEventListener('click', event => {
       answer1.style.backgroundColor = "rgb(255, 92, 92)";
       changeqe();
     });
   }
 
   if (answer2 === obj[i].Tr) {
-    answer2.addEventListener("click", event=> {
-      answer2.target.style.backgroundColor = " rgb(75, 255, 96)";
+    answer2.addEventListener('click', event=> {
+      answer2.style.backgroundColor = " rgb(75, 255, 96)";
       changeqe();
     });
   }
 
   if (answer2 !== obj[i].Tr) {
-    answer2.addEventListener("click", event => {
+    answer2.addEventListener('click', event => {
       answer3.style.backgroundColor = "rgb(255, 92, 92)";
       changeqe();
     });
   }
 
   if (answer3 === obj[i].Tr) {
-    answer3.addEventListener("click", event => {
+    answer3.addEventListener('click', event => {
       answer3.style.backgroundColor = " rgb(75, 255, 96)";
       changeqe();
     });
   }
 
   if (answer3 !== obj[i].Tr) {
-    answer3.addEventListener("click", event => {
+    answer3.addEventListener('click' ,event => {
       answer3.style.backgroundColor = "rgb(255, 92, 92)";
        changeqe();
     });
   }
 
   if (answer4 === obj[i].Tr) {
-    answer4.addEventListener("click", event => {
+    answer4.addEventListener('click', event => {
       answer4.style.backgroundColor = " rgb(75, 255, 96)";
        changeqe();
     });
   }
 
   if (answer4 !== obj[i].Tr) {
-    answer4.addEventListener("click", event => {
+    answer4.addEventListener('click', event => {
       answer4.style.backgroundColor = "rgb(255, 92, 92)";
        changeqe();
     });
