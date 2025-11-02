@@ -1,6 +1,7 @@
 
 body{
-   background-image: url(https://i.pinimg.com/736x/69/02/c2/6902c2fa762eb074679073fe64e1e5f3.jpg);
+   /* background-image: url(https://i.pinimg.com/736x/69/02/c2/6902c2fa762eb074679073fe64e1e5f3.jpg); */
+   background-color: azure;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,32 +19,37 @@ header{
    font-weight: 100px;
 }
 .container{
-   background-color:azure;
-   display: grid;
-   border: 2px solid black;
-   border-radius: 5%;
-   width: 400px;
-   height: 400px;
-   align-items: center;
-   padding-left: 2%;
-   padding-right: 2%;
-   padding-bottom: 2%;
-   margin-top: 8%;
+  display: grid;
+  
+grid-template-columns: repeat(7, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
    
+}
+.input__info{
+   border: 2px solid rgb(255, 255, 255);
+   background-color: rgb(211, 255, 248);
+   border-radius: 20%;
+   height: 500px;
+   grid-area: 2 / 3 / 5 / 6;
+   text-align: center;
+   
+    /* justify-content: space-around; */
 }
 h2{
    text-align: center;
    color: darkblue;
 }
 input{
-   position: relative;
-   left: 2%;
-   height: 50%;
+ 
+   /* left: 2%; */
+   height: 10%;
   width: 50%;
 }
 #gender{
-  height: 50%;
-  width: 50%;
+  height: 10%;
+  width: 10%;
 }
 #suivant__button{
    position: relative;
@@ -82,7 +88,7 @@ border: 3px solid black;
 text-align: center;
 background-color: rgb(255, 255, 255);
 height: 120px;
-
+width: 250px;
 padding-left: 30%;
 padding-top: 20%;
 
