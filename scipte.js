@@ -44,7 +44,6 @@ const obj = [
                 answer3.textContent = obj[i].answer[2]
                 answer4.textContent = obj[i].answer[3]
                
-                
               
             }
             
@@ -53,7 +52,7 @@ const obj = [
             for (let j = 0; j < obj.length; j++){
               
  answer1.addEventListener('click', event => {
-                if (answer1 === Tr){
+                if (answer1 === obj[j].Tr){
       
       answer1.style.backgroundColor = " rgb(75, 255, 96)";
       
@@ -73,7 +72,7 @@ const obj = [
 
 
 answer2.addEventListener('click', event => {
-  if (answer2 === Tr) {
+  if (answer2 === obj[j].Tr) {
     
       answer2.style.backgroundColor = " rgb(75, 255, 96)";
      
@@ -90,7 +89,7 @@ answer2.addEventListener('click', event => {
 
 
   answer3.addEventListener('click', event => {
-  if (answer3 === Tr) {
+  if (answer3 === obj[j].Tr) {
    
       answer3.style.backgroundColor = " rgb(75, 255, 96)";
      
@@ -107,7 +106,7 @@ answer2.addEventListener('click', event => {
 
 
 answer4.addEventListener('click', event => {
-  if (answer4 === Tr) {
+  if (answer4 === obj[j].Tr) {
     
       answer4.style.backgroundColor = " rgb(75, 255, 96)";
      
